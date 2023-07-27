@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'prompt', sans-serif;
+            color: white;
+            background-color: black;
+            overflow-x: hidden;
+        }
+
+
+        section {
+
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+
+        .blue {
+            background: blueviolet;
+        }
+
+        .red {
+            background: rgb(240, 47, 79);
+        }
+
+        .pink {
+
+            background: rgb(230, 70, 222);
+        }
+
+        .dark {
+            background: black;
+        }
+
+        .curve {
+
+            position: absolute;
+            height: 225px;
+            width: 100%;
+            bottom: 0;
+
+        }
+
+
+        .curve::before {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: rgb(2, 2, 5);
+            transform: translate(85%, -44.5%);
+
+        }
+
+
+        .curve::after {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: blueviolet;
+            transform: translate(-2.5%, -66%);
+            z-index: -1;
+        }
+
+
+        .bubble::after {
+            content: '';
+            border-top-left-radius: 50% 100%;
+            border-top-right-radius: 50% 100%;
+            position: absolute;
+            bottom: 0;
+            height: 0;
+            width: 100%;
+            background-color: rgb(228, 8, 8);
+            z-index: -1;
+        }
+
+        .custom-shape-divider-top-1690461332 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1690461332 svg {
+    position: relative;
+    display: block;
+    width: calc(112% + 1.3px);
+    height: 266px;
+}
+
+.custom-shape-divider-top-1690461332 .shape-fill {
+    fill: #0A0404;
+}
+
+
+.custom-shape-divider-bottom-1690461659 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1690461659 svg {
+    position: relative;
+    display: block;
+    width: calc(112% + 1.3px);
+    height: 266px;
+}
+
+.custom-shape-divider-bottom-1690461659 .shape-fill {
+    fill: #000000;
+}
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <section class="blue">
+        <h1>Nice Curve</h1>
+        https://www.shapedivider.app/
+
+
+        youtube video>>>   https://www.youtube.com/watch?v=lPJVi797Uy0&t=121s
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eum eveniet maxime voluptatem expedita
+            perspiciatis ipsa eius tenetur modi, placeat laudantium reprehenderit temporibus quo nihil animi dolore id
+            explicabo perferendis?</p>
+    </section>
+
+    <div class="curve"></div>
+    <section class="bubble">
+        <h1>Nice Curve</h1>
+        <p>Rem architecto dolorum eligendi. Ipsam optio ex corrupti atque earum nulla beatae deserunt ut, quaerat
+            doloribus necessitatibus debitis, voluptatum placeat ea maxime eius, praesentium dolorem at quia culpa
+            adipisci cupiditate.</p>
+    </section>
+    <section class="dark">
+        <h1>Nice Curve</h1>
+        <p>Ea recusandae necessitatibus dolores? Quasi natus necessitatibus, quos quia eius, minus nostrum excepturi
+            saepe placeat reprehenderit veritatis, quisquam facilis! Eligendi dolores laboriosam repellat doloremque
+            vitae! Dolores voluptatibus veniam doloremque quos!</p>
+    </section>
+    <section class="red">
+        <h1>Nice Curve</h1>
+        <p>Enim blanditiis ut soluta amet fugiat recusandae aliquam tempore est sed vero nam provident, alias voluptas
+            accusantium sequi? Vel nobis obcaecati nisi nam optio. Maxime corporis autem numquam tempore. Natus.</p>
+            <div class="custom-shape-divider-top-1690461332">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="custom-shape-divider-bottom-1690461659">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            </div>
+   
+        </section>
+  
+    <section>
+        <h1>Nice Curve</h1>
+        <p>Perferendis incidunt cupiditate aut nisi quae dolor soluta eveniet, asperiores recusandae cumque, fuga, quos
+            sunt id velit et nam neque aliquam reprehenderit totam. Nisi, molestiae incidunt! Quidem ex placeat
+            distinctio!</p>
+           
+    </section>
+    <section>
+        <h1>Nice Curve</h1>
+        <p>Aperiam excepturi dolorem hic! Quo fugit veniam dolor, laborum error quibusdam, ipsa dicta rem vero ducimus
+            tenetur quod nemo, culpa corporis doloribus temporibus veritatis saepe repellendus laudantium alias in
+            fugiat.</p>
+    </section>
+    <section>
+        <h1>Nice Curve</h1>
+        <p>Praesentium incidunt qui aspernatur ut quos molestiae repudiandae blanditiis inventore id corrupti tenetur
+            similique culpa doloribus saepe, cupiditate aliquid veniam? Nulla in impedit mollitia hic vel blanditiis
+            laborum maxime atque!</p>
+    </section>
+    <section>
+        <h1>Nice Curve</h1>
+        <p>A, id? Veniam inventore nam ab asperiores quos? Distinctio odit excepturi aut quibusdam illo, laboriosam
+            ipsum molestiae quia atque delectus, possimus dolorum perspiciatis, dignissimos exercitationem numquam
+            voluptate sed. Eaque, sed?</p>
+    </section>
+</body>
+
+</html>
