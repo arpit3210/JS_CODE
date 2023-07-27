@@ -4,5 +4,7 @@ function map(f, a) {
       result[i] = f(a[i]);
     }
     return result;
+
+    
   }
   
