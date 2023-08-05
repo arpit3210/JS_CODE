@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 2 - Age</title>
+</head>
+<body>
+    <h1>Enter Your Age</h1>
+    
+    <form id="ageForm">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+        <button type="button" onclick="submitAge()">Next</button>
+    </form>
+    
+    <script>
+        function submitAge() {
+            var age = document.getElementById("age").value;
+            localStorage.setItem("age", age);
+            window.location.href = "page3.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        h2{
+           position:relative;
+           font-size: 3em; 
+           color: rgb(243, 221, 21);
+        }
+
+        h2::before {
+content: attr(data-text);
+position: absolute;
+color: aqua;
+width: 30px;
+overflow: hidden;
+white-space: nowrap;
+border-right: 4px solid rgb(12, 8, 8) ;
+animation: animate 4s linear infinite;
+        }
+
+
+        @keyframes animate {
+
+            0%,10%,100%{
+
+                width: 0%;
+
+            }
+
+            70%, 90%{
+
+                width: 30%;
+            }
+            
+        }
+
+ 
+
+
+    </style>
+</head>
+<body>
+    
+    <h2 data-text="Untapped Gold Tokens"> Untapped Gold Tokens</h2>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summary - Collected Data</title>
+</head>
+<body>
+    <h1>Summary - Collected Data</h1>
+    
+    <div id="summaryContainer">
+        <!-- Summary data will be displayed here -->
+    </div>
+    
+    <script>
+        var collectedData = {
+            name: localStorage.getItem("name"),
+            age: localStorage.getItem("age"),
+            email: localStorage.getItem("email"),
+            opinion: localStorage.getItem("opinion")
+        };
+        
+        var summaryContainer = document.getElementById("summaryContainer");
+        summaryContainer.innerHTML = `
+            <p><b>Name</b>: ${collectedData.name}</p>
+            <p>Age: ${collectedData.age}</p>
+            <p>Email: ${collectedData.email}</p>
+            <p>Opinion: ${collectedData.opinion}</p>
+        `;
+    </script>
+</body>
+</html>

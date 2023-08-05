@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 1 - Name</title>
+</head>
+<body>
+    <h1>Enter Your Name</h1>
+    
+    <form id="nameForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <button type="button" onclick="submitName()">Next</button>
+    </form>
+    
+    <script>
+        function submitName() {
+            var name = document.getElementById("name").value;
+            localStorage.setItem("name", name);
+            window.location.href = "page2.html";
+        }
+    </script>
+</body>
+</html>

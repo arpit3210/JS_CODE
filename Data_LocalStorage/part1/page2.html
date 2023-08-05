@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Data</title>
+</head>
+<body>
+    <h1>Stored Data</h1>
+    
+    <div id="dataContainer">
+        <!-- Data will be displayed here -->
+    </div>
+    
+    <script>
+        // Retrieve the stored JSON string from local storage
+        var formDataJson = localStorage.getItem("formData");
+        
+        // Convert the JSON string back to an object
+        var formData = JSON.parse(formDataJson);
+        
+        // Display the data on the page
+        var dataContainer = document.getElementById("dataContainer");
+        dataContainer.innerHTML = `
+            <p>Name: ${formData.name}</p>
+            <p>Age: ${formData.age}</p>
+            <p>Email: ${formData.email}</p>
+            <p>Opinion: ${formData.opinion}</p>
+        `;
+    </script>
+</body>
+</html>

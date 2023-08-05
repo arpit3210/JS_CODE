@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Collection Form</title>
+</head>
+<body>
+    <h1>Data Collection Form</h1>
+    
+    <form id="dataForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="opinion">Opinion:</label><br>
+        <textarea id="opinion" name="opinion" rows="4" cols="50"></textarea><br><br>
+        
+        <button type="button" onclick="submitData()">Submit</button>
+    </form>
+    
+    <script>
+        function submitData() {
+            // Get form values
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var email = document.getElementById("email").value;
+            var opinion = document.getElementById("opinion").value;
+            
+            // Create an object to hold the data
+            var formData = {
+                name: name,
+                age: age,
+                email: email,
+                opinion: opinion
+            };
+            
+            // Convert the object to a JSON string
+            var formDataJson = JSON.stringify(formData);
+            
+            // Store the JSON string in local storage
+            localStorage.setItem("formData", formDataJson);
+            
+            alert("Data submitted to local storage.");
+
+            window.location.href = 'page2.html';
+        }
+    </script>
+</body>
+</html>
